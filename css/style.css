@@ -962,19 +962,15 @@ nav {
     height: 22px;
   }
   .promo {
-    min-height: 400px;
+    min-height: 300px;
     padding: 103px 0 34px 0;
   }
   .promo_head {
-    width: 290px;
-    margin: 0 auto;
     font-size: 30px;
     line-height: 35px;
     padding: 0 22px;
   }
   .promo_subhead {
-    width: 290px;
-    margin: 0 auto;
     margin-top: 27px;
     font-size: 20px;
     line-height: 23px;
