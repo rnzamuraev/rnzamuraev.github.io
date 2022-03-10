@@ -1,0 +1,433 @@
+
+a:hover
+    text-decoration: none
+    color: $white
+
+body
+    font-size: 17px
+    font-weight: 300
+
+header
+    position: relative
+    height: 50px
+
+.hamburger
+    display: none
+
+nav
+    position: fixed
+    width: 100%
+    height: 50px
+    background-color: $grey
+    z-index: 5
+
+.menu
+    margin: 0
+    padding: 13px 70px
+    display: flex
+    justify-content: space-between
+    list-style: none
+    &_link
+        font-size: 15px
+        color: $white
+    &_item
+        border-right: 2px dashed $black
+        padding-right: 30px
+        &:last-child
+            border: none
+            padding-right: 0
+
+.subheader_show
+    display: none
+
+.subheader
+    width: 100%
+    position: absolute
+    height: 135px
+    background-color: rgba(0, 0, 0, .6)
+    color: $white
+    padding-top: 50px
+    &_logo
+        display: block
+        margin-top: 19px
+        max-width: 100%
+    &_official
+        opacity: 0.6
+        font-weight: 100
+        font-size: 13px 
+    &_call
+        margin-top: 24px
+        font-size: 12px
+        line-height: 14px
+        text-align: right
+    &_number
+        display: block
+        font-weight: 400
+        font-size: 22px
+        color: $white
+        text-decoration: none
+        text-align: right
+        text-transform: uppercase
+    &_btn
+        float: right
+        width: 172px
+        height: 46px
+        margin: 20px 0
+        background-image: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+        box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+        border-radius: 4px
+        border: none
+        font-weight: 400
+        font-size: 14px
+        text-transform: uppercase
+        color: $white
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+        +btn_hover
+
+
+.promo
+    min-height: 800px
+    background: url('../img/uber_bg.jpg') center center/cover no-repeat
+    color: $white
+    padding: 140px 0 175px 0
+    &_head
+        font-weight: 700
+        font-size: 60px
+        line-height: 50px
+        text-align: center
+        text-transform: uppercase
+        margin: 0
+    &_subhead
+        font-weight: 700
+        font-size: 36px
+        line-height: 30px
+        text-align: center
+        text-transform: uppercase
+        margin: 0
+        margin-top: 22px
+    &_descr
+        font-weight: 400
+        font-size: 18px
+        text-align: center
+        margin: 0
+        margin-top: 35px
+    &_btn
+        display: block
+        margin: 0 auto
+        width: 259px
+        height: 63px
+        background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+        box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
+        border-radius: 4px
+        font-weight: 400
+        font-size: 18px
+        text-transform: uppercase
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+        border: none
+        color: $white
+        margin-top: 110px
+        +btn_hover
+
+.lable
+    width: 112px
+    height: 24px
+    margin: 0 auto
+    font-weight: 400
+    font-size: 11px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-transform: uppercase
+    mix-blend-mode: normal
+
+.title
+    font-weight: 700
+    font-size: 38px
+    text-align: center
+    text-transform: uppercase
+
+.reasons
+    padding: 20px 0 64px 0
+    &_lable 
+        background: $black
+        color: $white
+        mix-blend-mode: normal
+    &_title
+        color: $grey
+        margin-top: 30px
+        margin-bottom: 0
+    &_card
+        margin: 0 auto
+        display: flex
+        padding-bottom: 24px 
+    &_background 
+        width: 116px
+        height: 116px
+        background: $lightBlue
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 16px 25px 20px 0
+    &_icon 
+        margin: 0
+    &_subtitle
+        max-width: 371px
+        font-weight: 400
+        color: $lightBlue
+    &_text
+        max-width: 371px
+        font-size: 15px
+        color: $grey
+        margin: 0
+
+.subtitle
+    text-align: center
+    font-weight: 400
+
+.mobile
+    padding: 46px 0 80px
+    &_lable
+        background: $black
+        color: $white
+    &_title
+        color: $grey
+        margin: 0
+        margin-top: 30px
+        line-height: 48px
+    &_subtitle
+        color: $grey
+    .row
+        margin-top: 30px
+    &_item
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        height: 280px
+        margin: 0 auto 19px
+        padding: 88px 0 35px
+        &_1
+            background: url('../img/Card-1.jpg') center center/cover no-repeat
+        &_2
+            background: url('../img/Card-2.jpg') center center/cover no-repeat
+        &_3
+            background: url('../img/Card-3.jpg') center center/cover no-repeat
+        &_4
+            background: url('../img/Card-4.jpg') center center/cover no-repeat
+        &_5
+            background: url('../img/Card-5.jpg') center center/cover no-repeat
+        &_6
+            background: url('../img/Card-6.jpg') center center/cover no-repeat
+        &_subtitle
+            width: 100%
+            font-weight: 400
+            font-size: 24px
+            text-align: center
+            text-transform: uppercase
+            color: $white
+        &_plus
+            width: 28px
+            height: 28px
+            border-radius: 100%
+            background: $black
+            cursor: pointer
+            position: relative
+            &::before
+                content: ''
+                display: block
+                width: 14px
+                height: 2px
+                background-color: $lightBlue
+                position: absolute
+                top: 50%
+                left: 25%
+                transform: translateY(-50%)
+                transition: 0.3s all
+            &::after
+                content: ''
+                display: block
+                width: 2px
+                height: 14px
+                background-color: $lightBlue
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                top: 25%
+                transition: 0.3s all
+            &:hover
+                &::before, &::after
+                    background-color: $red
+                    
+.choice
+    position: relative
+    color: $white
+    padding: 55px 0 138px
+    &_black
+        top: 0
+        left: 0
+        position: absolute
+        width: 100%
+        height: 650px
+        background: $darkBlue
+        z-index: -1
+    &_lable
+        background: $white
+        color: $darkBlue
+    &_title
+        margin: 26px 0 0 0
+        line-height: 48px
+    &_img
+        display: block
+        margin: 54px auto 0
+        width: 100%
+    &_show
+        display: none
+    &_descr
+        display: block
+        margin: 0 auto
+        text-align: center
+        color: $grey
+
+.recuire
+    padding: 67px 0 57px
+    &_lable
+        background: $black
+        color: $white
+    &_title
+        color: $grey
+        margin: 0
+        margin-top: 30px
+        line-height: 48px
+    &_block
+        max-width: 550px
+        margin: 30px auto
+    &_list-title
+        font-size: 22px
+        font-weight: 400
+        display: flex
+        align-items: center
+        color: $lightBlue
+    &_list
+        list-style: none
+        padding-left: 50px
+        margin-top: 8px
+        li  
+            position: relative
+            margin-top: 5px
+            &::before
+                content: ''
+                display: block
+                width: 21px
+                height: 20px
+                background: url('../icons/check_blue.png')
+                position: absolute
+                top: 3px
+                left: -33px
+    &_descr
+        color: $lightBlue
+    .warning
+        .recuire_list-title
+            color: $red
+        .recuire_list
+            li
+                &::before
+                    background: url('../icons/check_red.png')
+
+.cities
+    background: #080816
+    color: $white
+    &_bg
+        padding: 50px 0
+        height: 716px
+        background: url('../img/world_bg.jpg') center center/cover no-repeat
+    &_lable
+        background: $white
+        color: $darkBlue
+        width: 79px
+        height: 27px
+    &_title
+        margin: 26px 0 0 0
+    &_subtitle
+        margin-top: -5px
+    &_link
+        display: block
+        margin: 0 auto
+        font-weight: 400
+        font-size: 15px
+        text-align: center
+        text-transform: uppercase
+        color: #1FBAD6
+        margin-top: 479px
+        &:hover
+            text-decoration: none
+            color: #1FBAD6
+
+.footer
+    box-sizing: border-box
+    margin: 0 26px
+    padding: 25px 0 22px
+    &_divider
+        width: 299px 
+        height: 4px
+        background: $lightBlue
+        margin: 0 auto
+    &_wrapper
+        margin-top: 33px
+        display: grid
+        grid-template-columns: 296px 1fr 296px
+    &_social
+        display: grid
+        grid-template-columns: 35px 35px 35px 35px
+        column-gap: 7px
+        padding-top: 5px
+        &_item
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 35px
+            height: 35px
+            background: $darkBlue
+            border-radius: 100%
+            color: $white  
+    &_nav
+        text-transform: uppercase
+        &_menu
+            margin: 0 auto
+            display: flex
+            justify-content: space-between
+            max-width: 366px
+            list-style: none
+            padding: 0
+            a
+                font-size: 15px
+                color: $darkBlue
+                +a_hover-lightBlue
+        &_submenu
+            margin: 0 auto
+            display: flex
+            justify-content: space-between
+            max-width: 391px
+            list-style: none
+            padding: 0
+            a
+                font-size: 11px
+                line-height: 11px
+                color: #999999
+                &:hover 
+                    color: #999999 
+        &_link
+            display: flex
+            justify-content: center
+            font-size: 11px
+            color: $lightBlue
+            margin-top: 5px
+            &:hover 
+                color: $lightBlue
+    &_links       
+        display: grid
+        grid-template-columns: 94px 94px 94px
+        column-gap: 7px
+        padding-top: 5px
+
